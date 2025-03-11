@@ -1,0 +1,80 @@
+/* Estilos básicos para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('garden.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center; /* Centrar texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Centrado vertical */
+    margin: 0;
+}
+
+/* Estilo para los contenedores de los medidores */
+#score, #money, #dynamite-count {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    background-color: #800080; /* Morado */
+    border: 2px solid #4B0082; /* Color morado más oscuro */
+    border-radius: 10px;
+    color: black; /* Texto negro para los medidores */
+}
+
+/* Estilo para el contenedor de bloques */
+#block-container {
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    grid-gap: 2px;
+    margin: 20px auto; /* Centrar y añadir un poco de espacio */
+    justify-content: center;
+}
+
+/* Estilo para los bloques */
+.block {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Bloques de tierra, piedra y oro */
+.earth {
+    background-color: #8B4513; /* Marrón oscuro para la tierra */
+}
+
+.stone {
+    background-color: gray;
+}
+
+.gold {
+    background-color: gold;
+}
+
+/* Efecto cuando un bloque es minado */
+.mined {
+    background-color: black;
+}
+
+/* Botón para comprar dinamita */
+#buy-dynamite {
+    padding: 10px 20px;
+    background-color: #800080; /* Morado */
+    border: none;
+    border-radius: 5px;
+    color: white; /* Texto blanco para el botón */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#buy-dynamite:hover {
+    background-color: #4B0082; /* Morado más oscuro al hacer hover */
+}
