@@ -47,7 +47,7 @@ function mineBlock(block) {
     }
 
     if (block.classList.contains('gold')) {
-        money += 50; // Los minerales dorados dan dinero
+        money += 70; // Los minerales dorados dan dinero
         moneyDisplay.textContent = money;
     }
 
